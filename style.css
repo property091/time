@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.time {
+    width: 400px;
+    height: 150px;
+
+    background-color: transparent;
+
+    margin: 0 auto;
+    margin-top: 20%; 
+    margin-left: 1000px;
+    
+
+    text-align: center;
+    font-size: 150px;
+    font-family: monospace;
+
+    color: rgba(240, 248, 255, 0.767);
+
+    transition-property: all;
+    transition: 1.2s;
+
+    position: relative;
+}
+
+
+
+.bg,
+.bg2,
+.bg3,
+.bg4,
+.bg5,
+.bg6,
+.bg7 {
+    
+    position: absolute;
+    width: 2000px;
+    height: 1000px;
+
+    transition-property: all;
+    transition: 1.3s;
+}
+
+
+.bg, .bg2, .bg3, .bg6, .bg7{
+    transition: 3s;
+}
+
+.bg {
+    background: url(img/bg.png);
+    left: -100px;
+}
+.bg2 {
+    background: url(img/bg2.png);
+    clip-path: polygon(100.00% 58.78%,94.56% 60.07%,93.37% 49.26%,85.46% 41.18%,81.50% 61.71%,53.10% 64.09%,48.45% 58.65%,40.53% 62.04%,35.17% 39.04%,31.47% 42.44%,30.63% 58.14%,10.34% 62.81%,4.66% 45.53%,0.00% 31.32%,0% 100%,100.00% 100%);
+}
+.bg3 {
+    background: url(img/bg3.png);
+    clip-path: polygon(0.00% 64.68%,100.00% 65.19%,100.00% 100%,0.00% 100%);
+
+    animation: water 8s infinite;
+}
+.bg4 {
+    background: url(img/bg4.png);
+    clip-path: polygon(23.94% 21.13%,36.72% 19.35%,31.62% 35.46%,18.21% 32.15%);
+}
+.bg5 {
+    background: url(img/bg5.png);
+    clip-path: polygon(73.59% 28.25%,76.44% 38.69%,67.78% 47.42%,62.38% 36.73%);
+}
+.bg6 {
+    background: url(img/bg6.png);
+    clip-path: polygon(60.35% 71.28%,68.67% 74.59%,80.55% 73.17%,89.92% 73.23%,90.12% 94.17%,79.62% 94.40%,73.99% 93.06%,62.26% 95.95%,63.39% 85.11%);
+}
+.bg7 {
+    background: url(img/bg7.png);
+    transform: scale(1.03);
+    clip-path: polygon(0.00% 88.11%,100.00% 91.93%,100.00% 100%,0.00% 100%);
+}
+
+.bg:hover,
+.bg2:hover,
+.bg3:hover,
+.bg4:hover,
+.bg5:hover,
+.bg6:hover {
+    -webkit-transform: scale(1.02);
+}
+
+
+@keyframes water {
+    0% {
+        -webkit-transform: scale(1.001);
+    }
+
+    50% {
+        -webkit-transform: scale(1.01);
+    }
+
+    100% {
+        -webkit-transform: scale(1.001);
+    }
+}
+
+
+
+
+#music {
+    border-radius: 50%;
+
+    width: 300px;
+    height: 50px;
+
+    margin-left: 600px;
+    
+}
+
+#text {
+    text-align: center;
+
+    font-size: 16px;
+    font-family: monospace;
+    color: rgba(240, 248, 255, 0.87);
+    
+    margin-left: 400px;
+}
+
+.text2 {
+    text-align: center;
+
+    font-size: 30px;
+    font-family: monospace;
+    color: rgba(240, 248, 255, 0.87);
+    
+    margin-left: -700px;
+    margin-top: 550px;
+}
+
+#prewiew {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(224, 161, 171);
+    opacity: 60%;
+
+    z-index: 3;
+}
