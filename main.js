@@ -1,6 +1,6 @@
 time = document.getElementById('time');
 
-var start = 119;
+var start = 1;
 let id = setInterval(sec, 1000);
 
 //проверка музыки 
